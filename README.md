@@ -32,7 +32,7 @@ Of course it is not perfect (yet), the TODO list is endless and probably it cont
 ```
 git clone https://github.com/dpradom/thorkspace
 ```
-* Optional: *Edit `conf/packages.cfg` to point a different server `url` or even `server` type (see [configuration](## Configuration) for more details).*
+* Optional: *Edit `conf/packages.cfg` to point a different server `url` or even `server` type (see [Editing `packages.cfg`](#editing-`packages.cfg`) for more details).*
 * Run `launch.bat` for the first time. It will start downloading the minimun packages to execute the application.
 * Check the packages you want and click `Install` (be patient).
 ![TSSelector](conf/doc/img/selector_1.png)
@@ -40,7 +40,7 @@ git clone https://github.com/dpradom/thorkspace
 ## Usage examples
 
 Once it is *installed* (minimun and selected packages are downloaded and deployed) all you need to do is execute `launch.bat`.\
-Doing this you will be able to check the application(s) and workspace(s) you want to start (see [managing workspaces](#Managing workspaces) for more details). 
+Doing this you will be able to check the application(s) and workspace(s) you want to start (see [managing workspaces](#managing-workspaces) for more details). 
 
 ![TSLauncher](conf/doc/img/launcher_1.png)
 
@@ -71,7 +71,7 @@ Maybe you noticed about the check on the bottom-left corner of Selector window..
 
 ![TSSelector](conf/doc/img/selector_2.png)
 
-It will transform your Thorkspace copy on a package repository. To achieve that, it will start downloading the whole list of packages from current repository (be patient!). Once done, Launcher's "Launch" will start a [HFS instance](http://www.rejetto.com/hfs/) exposing an URL others can configure as their repository URL (see [editing `packages.cfg`](#Editing `packages.cfg`) for details).
+It will transform your Thorkspace copy on a package repository. To achieve that, it will start downloading the whole list of packages from current repository (be patient!). Once done, Launcher's "Launch" will start a [HFS instance](http://www.rejetto.com/hfs/) exposing an URL others can configure as their repository URL (see [editing `packages.cfg`](#editing-`packages.cfg`) for details).
 
 ### Editing `packages.cfg`
 
