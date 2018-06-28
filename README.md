@@ -4,16 +4,16 @@
 This is a set of MS Windows CMD and AutoIT scripts that work together to offer a portable Java development environment.\
 These scripts rely on a repository (initially hosted on [pkg.argallar.net](https://pkg.argallar.net/artifactory/thorkspace)) which contains different software utilities, the user can download and deploy to work with.
 
-- [Why?](#Why?)
-- [Installation](#Installation)
-- [Usage examples](#Usage examples)
-  * [Managing workspaces](#Managing workspaces)
-  * [Changing default launcher's behaviour](#Changing default launcher's behaviour)
-  * [Become a repository (LAN Contagion!)](#Become a repository (LAN Contagion!))
-  * [Editing `packages.cfg`](#Editing `packages.cfg`)
-  * [Updating Thorkspace](#Updating Thorkspace)
-- [Release history](#Release history)
-- [Contributing](#Contributing)
+- [Why?](#why?)
+- [Installation](#installation)
+- [Usage examples](#usage-examples)
+  * [Managing workspaces](#managing-workspaces)
+  * [Changing default launcher's behaviour](#changing-default-launcher's-behaviour)
+  * [LAN Contagion!](#lan-contagion!))
+  * [Editing `packages.cfg`](#editing-`packages.cfg`)
+  * [Updating Thorkspace](#updating-thorkspace)
+- [Release history](#release-history)
+- [Contributing](#contributing)
 
 ## Why?
 Fair question... short answer: because I enjoy messing with stupid things (madness?).\
@@ -41,29 +41,36 @@ git clone https://github.com/dpradom/thorkspace
 
 Once it is *installed* (minimun and selected packages are downloaded and deployed) all you need to do is execute `launch.bat`.\
 Doing this you will be able to check the application(s) and workspace(s) you want to start (see [managing workspaces](#Managing workspaces) for more details). 
+
 ![TSLauncher](conf/doc/img/launcher_1.png)
+
 Clicking "Launch", all of them will be started (also all config changes you made -read below- will be saved to disk).\
 You can also click on "Updater" to *install* new packages from repository anytime.
 
 ### Managing workspaces
 
 Eventually, you'll want to add a new Workspace to your environment. You can do that by clicking on the `+` button on the left of "Workspace" box. This will open a dialog box in which you'll be asked for a name and an IDE (note you need to install at least one package from "IDE" group before).
+
 ![TSLauncher](conf/doc/img/launcher_2.png)
+
 If anytime you want to remove a workspace, all you have to do is select it and click the `-` button. Contents won't be deleted from your disk, Thorkspace will just ignore them.
 
 ### Changing default launcher's behaviour
 
 There are various checks you can use to change your Thorkspace behaviour. Remember that anything you change will be saved to disk once you click "Launch" and will take effect next time you execute `launch.bat`.
+
 ![TSLauncher](conf/doc/img/launcher_3.png)
 
 * `Save config`: will save check programs/workspaces state as default.
 * `Save script`: will create a `start.bat` script on root folder that will let user to launch checked programs/workspaces without opening Thorkspace UI.
 * `Branch calc`: will show project's version control information on workspace's tooltip window.
 
-### Become a repository (LAN Contagion!)
+### LAN Contagion!
 
 Maybe you noticed about the check on the bottom-left corner of Selector window...
+
 ![TSSelector](conf/doc/img/selector_2.png)
+
 It will transform your Thorkspace copy on a package repository. To achieve that, it will start downloading the whole list of packages from current repository (be patient!). Once done, Launcher's "Launch" will start a [HFS instance](http://www.rejetto.com/hfs/) exposing an URL others can configure as their repository URL (see [editing `packages.cfg`](#Editing `packages.cfg`) for details).
 
 ### Editing `packages.cfg`
@@ -74,7 +81,9 @@ Properties are quite self-explanatory and give you 3 types onf repository to con
 ### Updating Thorkspace
 
 When Selector detects the existance of a new Thorkspace's version, it will warn the user and offer a button to update.
+
 ![TSSelector](conf/doc/img/selector_3.png)
+
 "Minor" version change means light differences on scripts, while "Major" means even the package *ecosystem* has changed.
 
 ## Release History
