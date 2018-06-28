@@ -35,6 +35,7 @@ git clone https://github.com/dpradom/thorkspace
 * Optional: *Edit `conf/packages.cfg` to point a different server `url` or even `server` type (see [Editing `packages.cfg`](#editing-`packages.cfg`) for more details).*
 * Run `launch.bat` for the first time. It will start downloading the minimun packages to execute the application.
 * Check the packages you want and click `Install` (be patient).
+
 ![TSSelector](conf/doc/img/selector_1.png)
 
 ## Usage examples
